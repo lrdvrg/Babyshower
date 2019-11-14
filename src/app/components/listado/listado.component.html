@@ -1,0 +1,12 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Wish</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr (click)="seleccionar(item.idListado, item.deseo)" *ngFor="let item of this.babyshower.listado">
+            <td colspan="2">{{item.deseo}}</td>
+        </tr>
+    </tbody>
+</table>

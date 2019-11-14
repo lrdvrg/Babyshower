@@ -1,0 +1,14 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Deseo</th>
+            <th scope="col">Persona</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of this.babyshower.escogidos">
+            <td>{{item.deseo}}</td>
+            <td>{{item.nombre}}</td>
+        </tr>
+    </tbody>
+</table>

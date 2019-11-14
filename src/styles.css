@@ -1,1 +1,63 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
+}
+
+header {
+    margin: 30px 0;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+table tr:hover {
+    cursor: pointer;
+}
+
+.contenido-principal {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 30px;
+}
+
+.presupuesto p {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.presupuesto p span {
+    font-weight: normal;
+}
+
+#gastos {
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    color: #004e92;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+input.ng-dirty.ng-invalid {
+    border-color: #dc3545;
+}
+
+div.validation-error {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
