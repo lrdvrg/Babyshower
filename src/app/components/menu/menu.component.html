@@ -1,20 +1,16 @@
 <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
-    <div class="form-row">
-        <div class="col-3">
-            <input type="hidden" name="idUsuario" #idUsuario="ngModel" [(ngModel)]="babyshower.idUsuario">
-            <div class="form-group">
-                <label>Nombre</label>
-                <input name="usuario" #usuario="ngModel" [(ngModel)]="babyshower.seleccion.nombre" class="form-control" required>
-                <div class="validation-error" *ngIf="usuario.invalid && usuario.dirty">Este campo no puede estar vacio.</div>
-            </div>
-        </div>
-        <div class="col-9">
-            <input type="hidden" name="idListado" #idListado="ngModel" [(ngModel)]="babyshower.idListado">
-            <div class="form-group">
-                <label>Deseo</label>
-                <input name="listado" #listado="ngModel" [(ngModel)]="babyshower.seleccion.deseo" class="form-control" disabled>
-            </div>
-        </div>
+
+    <input type="hidden" name="idUsuario" #idUsuario="ngModel" [(ngModel)]="babyshower.idUsuario">
+    <div class="form-group">
+        <label>Nombre</label>
+        <input name="usuario" #usuario="ngModel" [(ngModel)]="babyshower.seleccion.nombre" class="form-control" required>
+        <div class="validation-error" *ngIf="usuario.invalid && usuario.dirty">Este campo no puede estar vacio.</div>
+    </div>
+
+    <input type="hidden" name="idListado" #idListado="ngModel" [(ngModel)]="babyshower.idListado">
+    <div class="form-group">
+        <label>Eleccion</label>
+        <input name="listado" #listado="ngModel" [(ngModel)]="babyshower.seleccion.deseo" class="form-control" disabled>
     </div>
     <button type="submit" [disabled]="form.invalid" class="btn btn-outline-primary">Listo</button>
 </form>
